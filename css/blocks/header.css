@@ -1,0 +1,111 @@
+.header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.header__top {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--gray);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__bottom {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header__catalog {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-right: 31px;
+  transition: opacity 0.5s;
+}
+
+.header__catalog:hover {
+  opacity: 0.7;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+  max-width: 520px;
+  width: 100%;
+  height: 50px;
+  margin-right: 30px;
+}
+
+.header__search-input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--border);
+  background: var(--light);
+  padding-left: 45px;
+  padding-right: 10px;
+}
+
+.header__search-input::placeholder {
+  color: var(--gray);
+}
+
+.header__search-btn {
+  height: 100%;
+  width: 84px;
+  background-color: var(--blue);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: opacity 0.5s;
+}
+
+.header__search-btn:hover {
+  opacity: 0.7;
+}
+
+.header__phone {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transition: opacity 0.5s;
+}
+
+.header__phone:hover {
+  opacity: 0.7;
+}
+
+.header__numbar {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--gray);
+  opacity: 0.9;
+}
+.header__phone-text {
+  color: var(--green);
+}
+
+.header__settings-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 40px;
+}
+.header__settings-item {
+  display: flex;
+  align-items: center;
+}
+.header__settings-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  line-height: 17px;
+  color: var(--blue);
+}
+.header__settings-svg {
+}

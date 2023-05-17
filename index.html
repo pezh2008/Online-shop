@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>Магазин европейской сантехники</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="header__container container">
+          <a class="logo" href="/">
+            <img class="logo__img" src="./img/logo.png" alt="Логотип сайта" />
+          </a>
+          <nav class="menu">
+            <a class="menu__link" href="about.html">О нас</a>
+            <a class="menu__link" href="manufacturers.html">Производители</a>
+            <a class="menu__link" href="guarantee.html">Гарантии и возврат</a>
+            <a class="menu__link" href="delivery.html">Доставка</a>
+            <a class="menu__link" href="pay.html">Оплата</a>
+            <a class="menu__link" href="contacts.html">Контакты</a>
+          </nav>
+          <div class="register">
+            <a class="register__link" href="register.html">
+              <svg
+                class="register__svg"
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.875 24.375C9.79167 23.125 11.6667 22.0833 12.5 21.25C13.75 20 10 20 10 13.75C10 9.58333 11.6667 7.5 15 7.5C18.3333 7.5 20 9.58333 20 13.75C20 20 16.25 20 17.5 21.25C18.3333 22.0833 20.2083 23.125 23.125 24.375"
+                  stroke="#6F7682"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z"
+                  stroke="#6F7682"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                />
+              </svg>
+              Вход / Регистрация
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="header__container container">
+          <a class="header__catalog" href="#">
+            <svg
+              class="header__catalog-svg"
+              width="31"
+              height="31"
+              viewBox="0 0 31 31"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#4798DE" />
+              <circle cx="3.5" cy="15.5" r="3.5" fill="#4798DE" />
+              <circle cx="3.5" cy="27.5" r="3.5" fill="#4798DE" />
+              <circle cx="15.5" cy="3.5" r="3.5" fill="#4798DE" />
+              <circle cx="15.5" cy="15.5" r="3.5" fill="#4798DE" />
+              <circle cx="15.5" cy="27.5" r="3.5" fill="#4798DE" />
+              <circle cx="27.5" cy="3.5" r="3.5" fill="#4798DE" />
+              <circle cx="27.5" cy="15.5" r="3.5" fill="#4798DE" />
+              <circle cx="27.5" cy="27.5" r="3.5" fill="#4798DE" />
+            </svg>
+
+            Каталог товаров</a
+          >
+          <form class="header__search">
+            <input
+              class="header__search-input"
+              type="text"
+              placeholder="Поиск товаров и брендов"
+            />
+            <button class="header__search-btn">
+              <svg
+                class="header__search-svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24.0195 24.02L33.3327 33.3332"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                />
+                <path
+                  d="M16.666 26.6665C22.1889 26.6665 26.666 22.1894 26.666 16.6665C26.666 11.1437 22.1889 6.6665 16.666 6.6665C11.1432 6.6665 6.66602 11.1437 6.66602 16.6665C6.66602 22.1894 11.1432 26.6665 16.666 26.6665Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                />
+              </svg>
+            </button>
+          </form>
+          <div class="header__phone">
+            <a class="header__numbar" href="tel:88000000000">8-800-000-00-00</a>
+            <span class="header__phone-text">Вам перезвонить?</span>
+          </div>
+          <ul class="header__settings-list">
+            <li class="header__settings-item">
+              <a href="#" class="header__settings-link">
+                <svg
+                  class="header__settings-svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5007 21.875L10.9902 20.5262C5.62565 15.7544 2.08398 12.6073 2.08398 8.74489C2.08398 5.59775 4.60482 3.125 7.81315 3.125C9.62565 3.125 11.3652 3.95266 12.5007 5.26056C13.6361 3.95266 15.3757 3.125 17.1882 3.125C20.3965 3.125 22.9173 5.59775 22.9173 8.74489C22.9173 12.6073 19.3757 15.7544 14.0111 20.5364L12.5007 21.875Z"
+                    stroke="#4798DE"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </svg>
+                Избранное
+              </a>
+            </li>
+            <li class="header__settings-item">
+              <a href="#" class="header__settings-link">
+                <svg
+                  class="header__settings-svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 25H25"
+                    stroke="#4798DE"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    d="M7.5 25L7.5 11.25H12.5V25"
+                    stroke="#4798DE"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    d="M12.5 25L12.5 6.25H17.5V25"
+                    stroke="#4798DE"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    d="M17.5 25V15H22.5V25"
+                    stroke="#4798DE"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </svg>
+                Сравнение
+              </a>
+            </li>
+            <li class="header__settings-item">
+              <a href="#" class="header__settings-link">
+                <svg
+                  class="header__settings-svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.5 7.5H26.2499L24.3749 18.75H9.37499L7.5 7.5Z"
+                    stroke="#4798DE"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    d="M11.25 25C11.9403 25 12.5 24.4404 12.5 23.75C12.5 23.0596 11.9403 22.5 11.25 22.5C10.5596 22.5 10 23.0596 10 23.75C10 24.4404 10.5596 25 11.25 25Z"
+                    stroke="#4798DE"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    d="M22.5 25C23.1903 25 23.75 24.4404 23.75 23.75C23.75 23.0596 23.1903 22.5 22.5 22.5C21.8096 22.5 21.25 23.0596 21.25 23.75C21.25 24.4404 21.8096 25 22.5 25Z"
+                    stroke="#4798DE"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    d="M7.49998 7.5H3.75"
+                    stroke="#4798DE"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </svg>
+
+                Корзина
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="banner">
+      <div class="banner__wrapper">
+        <div class="banner__slide">
+          <img class="banner__img" src="./img/banner.jpg" alt="" />
+        </div>
+        <div class="banner__slide">
+          <img class="banner__img" src="./img/banner.jpg" alt="" />
+        </div>
+        <div class="banner__slide">
+          <img class="banner__img" src="./img/banner.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="banner__prev">
+        <svg
+          width="16"
+          height="24"
+          viewBox="0 0 16 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M14 22.4102L3 11.7051L14 1.59473"
+            stroke="#4798DE"
+            stroke-width="3"
+          />
+        </svg>
+      </div>
+      <div class="banner__next">
+        <svg
+          width="16"
+          height="24"
+          viewBox="0 0 16 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 1.59473L13 12.2998L2 22.4101"
+            stroke="#4798DE"
+            stroke-width="3"
+          />
+        </svg>
+      </div>
+      <div class="banner__pagination"></div>
+    </div>
+    <main class="main">
+      <section class="test"></section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

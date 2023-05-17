@@ -1,0 +1,13 @@
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.menu__link {
+  transition: opacity 0.5s;
+  color: var(--gray);
+}
+
+.menu__link:hover {
+  opacity: 0.5;
+}

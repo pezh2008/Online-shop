@@ -1,0 +1,16 @@
+.register {
+  margin-left: auto;
+}
+
+.register__link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--gray);
+  transition: opacity 0.5s;
+}
+.register__link:hover {
+  opacity: 0.5;
+}
+.register__svg {
+}

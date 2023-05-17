@@ -1,0 +1,12 @@
+@import "./font.css";
+@import "./reset.css";
+@import "./vars.css";
+@import "./core.css";
+
+/*  */
+
+@import "./blocks/header.css";
+@import "./blocks/logo.css";
+@import "./blocks/menu.css";
+@import "./blocks/register.css";
+@import "./blocks/banner.css";
