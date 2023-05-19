@@ -107,5 +107,74 @@
   line-height: 17px;
   color: var(--blue);
 }
-.header__settings-svg {
+
+.header__burger {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .header__catalog {
+    gap: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+  .header__catalog-svg {
+    width: 20px;
+    height: 20px;
+  }
+  .header__search {
+    height: 35px;
+  }
+  .header__search-input {
+    padding-left: 20px;
+  }
+  .header__search-svg {
+    height: 30px;
+    width: 30px;
+  }
+  .header__phone {
+    display: none;
+  }
+  .header__settings-list {
+    gap: 25px;
+  }
+  .header__settings-link span {
+    display: none;
+  }
+  .header__settings-svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .header__burger {
+    display: flex;
+  }
+
+  .header__search {
+    height: 25px;
+    margin-right: 0;
+  }
+
+  .header__search-input::placeholder {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .header__search-svg {
+    width: 20px;
+    height: 20px;
+  }
+  .header__settings-list {
+    display: none;
+  }
 }

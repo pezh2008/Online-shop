@@ -11,3 +11,21 @@
 .menu__link:hover {
   opacity: 0.5;
 }
+
+
+@media(max-width: 1200px) {
+  .menu {
+    gap: 11px;
+  }
+  .menu__link {
+    font-size: 13px;
+    line-height: 17px;
+  }
+}
+
+@media(max-width: 767px) {
+  .menu {
+   display: none;
+  }
+
+}

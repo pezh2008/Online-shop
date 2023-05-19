@@ -8,6 +8,7 @@
 }
 
 .banner__slide {
+  position: relative;
   max-height: 600px;
   width: 100%;
   flex-shrink: 0;
@@ -19,21 +20,63 @@
   object-fit: cover;
 }
 
-.banner__pagination  {
-  margin-top: 30px; 
+.banner__info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  max-width: 405px;
+  width: 100%;
+  background: var(--light-opacity75);
+  padding-left: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 45px;
+}
+.banner__title {
+  max-width: 300px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  color: var(--gray);
+}
+
+.banner__title span {
+  color: var(--green);
+}
+
+.banner__link {
+}
+
+.banner__pagination {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .banner__pagination .swiper-pagination-bullet {
   width: 20px;
   height: 7px;
-  background: red;
   opacity: 1;
   border-radius: 0;
+  background: var(--light-grey);
+}
 
+.banner__pagination .swiper-pagination-bullet-active {
+  background: var(--blue);
 }
 
 .banner__prev,
 .banner__next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: var(--grey-opacity);
+  border-radius: 2px;
   position: absolute;
   top: 50%;
   transform: translateY(-30px);
@@ -45,6 +88,54 @@
   right: 0;
 }
 
+.swiper-button-disabled {
+  opacity: 0.5;
+}
+
 .test {
   height: 100vh;
+}
+
+@media (max-width: 767px) {
+  .banner__info {
+    width: 230px;
+  }
+  .banner__title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .banner__title span {
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .banner__link {
+    width: 125px;
+    height: 35px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner__info {
+    width: 142px;
+    padding-left: 5px;
+
+  }
+  .banner__title {
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 130px;
+  }
+  .banner__title span {
+    font-size: 20px;
+    line-height: 26px;
+    display: block;
+  }
+  .banner__link {
+    width: 100px;
+    height: 30px;
+    font-size: 13px;
+    line-height: 17px;
+  }
 }
