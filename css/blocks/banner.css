@@ -120,7 +120,7 @@
   .banner__info {
     width: 142px;
     padding-left: 5px;
-
+    gap: 15px;
   }
   .banner__title {
     font-size: 14px;
@@ -137,5 +137,13 @@
     height: 30px;
     font-size: 13px;
     line-height: 17px;
+  }
+  .banner__pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 4px;
+  }
+
+  .banner__pagination {
+    margin-top: 10px;
   }
 }
