@@ -49,3 +49,17 @@ new Swiper(".stock-slider", {
     },
   },
 });
+
+
+
+
+
+
+
+// btns.forEach((el, iBtn) => {
+//   el.addEventListener("click", () => {
+//     contents.forEach((el, icon) => {
+//       console.log(el);
+//     });
+//   });
+// });
