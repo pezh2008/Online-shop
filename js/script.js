@@ -50,16 +50,36 @@ new Swiper(".stock-slider", {
   },
 });
 
+const tabs = document.querySelectorAll(".products__info-link");
+const contents = document.querySelectorAll(".products__cards");
 
+tabs.forEach((el, index) => {
+  el.addEventListener("click", () => {
+    tabs.forEach((tab) => {
+      tab.classList.remove("active-tab");
+    });
 
+    el.classList.add("active-tab");
+    contents.forEach((el) => {
+      el.classList.remove("active-cards");
+    });
+    contents[index].classList.add("active-cards");
+  });
+});
 
+new Swiper(".services__content", {
+  wrapperClass: "services__list",
+  slideClass: "services__item",
+  slidesPerView: 6,
+  spaceBetween: 30,
 
+  navigation: {
+    nextEl: ".services__next",
+    prevEl: ".services__prev",
+  },
 
-
-// btns.forEach((el, iBtn) => {
-//   el.addEventListener("click", () => {
-//     contents.forEach((el, icon) => {
-//       console.log(el);
-//     });
-//   });
-// });
+  pagination: {
+    el: ".services__pagination",
+    clickable: true,
+  },
+});

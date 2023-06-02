@@ -380,6 +380,7 @@
       <div class="banner__pagination"></div>
     </div>
     <main class="main">
+      <section class=""></section>
       <section class="stock">
         <div class="container">
           <div class="stock__top">
@@ -500,7 +501,7 @@
         <div class="container">
           <div class="products__top">
             <div class="products__info">
-              <button class="products__info-link">
+              <button class="products__info-link active-tab">
                 <svg
                   class="products__info-svg"
                   width="20"
@@ -550,7 +551,7 @@
                 <span class="products__info-text">% СКИДКИ</span>
               </button>
             </div>
-            <!-- <ul class="products__list">
+            <ul class="products__list">
               <a class="products__item" href="#">Все</a>
               <a class="products__item" href="#">Ванны</a>
               <a class="products__item" href="#">Душ</a>
@@ -561,12 +562,14 @@
               <a class="products__item" href="#">Смесители</a>
               <a class="products__item" href="#">Аксессуары</a>
               <a class="products__item" href="#">Системы инсталяции</a>
-            </ul> -->
+            </ul>
           </div>
           <div class="products__botton">
-            <div class="products__cards">
+            <div class="products__cards active-cards">
               <div class="products__card">
-                <div class="products__card-bestseller">хит продаж</div>
+                <div class="products__card-decor products__card-decor_hit">
+                  хит продаж
+                </div>
                 <div class="products__card-image">
                   <img
                     class="products__card-img"
@@ -581,7 +584,7 @@
                   <a class="products__card-stock" href="#"
                     >В наличии:
                     <svg
-                    class="products__card-stock_svg"
+                      class="products__card-stock_svg"
                       width="15"
                       height="15"
                       viewBox="0 0 15 15"
@@ -657,7 +660,9 @@
                 </div>
               </div>
               <div class="products__card">
-                <div class="products__card-bestseller">хит продаж</div>
+                <div class="products__card-decor products__card-decor_hit">
+                  хит продаж
+                </div>
                 <div class="products__card-image">
                   <img
                     class="products__card-img"
@@ -672,7 +677,7 @@
                   <a class="products__card-stock" href="#"
                     >В наличии:
                     <svg
-                    class="products__card-stock_svg"
+                      class="products__card-stock_svg"
                       width="15"
                       height="15"
                       viewBox="0 0 15 15"
@@ -748,7 +753,9 @@
                 </div>
               </div>
               <div class="products__card">
-                <div class="products__card-bestseller">хит продаж</div>
+                <div class="products__card-decor products__card-decor_hit">
+                  хит продаж
+                </div>
                 <div class="products__card-image">
                   <img
                     class="products__card-img"
@@ -763,7 +770,7 @@
                   <a class="products__card-stock" href="#"
                     >В наличии:
                     <svg
-                    class="products__card-stock_svg"
+                      class="products__card-stock_svg"
                       width="15"
                       height="15"
                       viewBox="0 0 15 15"
@@ -839,7 +846,9 @@
                 </div>
               </div>
               <div class="products__card">
-                <div class="products__card-bestseller">хит продаж</div>
+                <div class="products__card-decor products__card-decor_hit">
+                  хит продаж
+                </div>
                 <div class="products__card-image">
                   <img
                     class="products__card-img"
@@ -854,7 +863,7 @@
                   <a class="products__card-stock" href="#"
                     >В наличии:
                     <svg
-                    class="products__card-stock_svg"
+                      class="products__card-stock_svg"
                       width="15"
                       height="15"
                       viewBox="0 0 15 15"
@@ -932,98 +941,9 @@
             </div>
             <div class="products__cards">
               <div class="products__card">
-                <div class="products__card-new">новинки</div>
-                <div class="products__card-image">
-                  <img
-                    class="products__card-img"
-                    src="./img/products/1.jpg"
-                    alt=""
-                  />
+                <div class="products__card-decor products__card-decor_new">
+                  новинки
                 </div>
-                <div class="products__card-box">
-                  <p class="products__card-name">Наименование</p>
-                  <p class="products__card-brand">Бренд:</p>
-                  <p class="products__card-cantry">Страна:</p>
-                  <a class="products__card-stock" href="#"
-                    >В наличии:
-                    <svg
-                    class="products__card-stock_svg"
-                      width="15"
-                      height="15"
-                      viewBox="0 0 15 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M2.5 8.125L5.625 11.25L12.5 4.375"
-                        stroke="#4798DE"
-                        stroke-linecap="square"
-                      />
-                    </svg>
-                  </a>
-                  <p class="products__card-price">15 000 ₽</p>
-                </div>
-
-                <div class="products__card-button">
-                  <button class="products__card-bag">В корзину</button>
-                  <div class="products__card-social">
-                    <a class="products__card-link" href="#">
-                      <svg
-                        class="prodicts__card-svg"
-                        width="25"
-                        height="25"
-                        viewBox="0 0 25 25"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.5007 21.875L10.9902 20.5262C5.62565 15.7544 2.08398 12.6073 2.08398 8.74489C2.08398 5.59775 4.60482 3.125 7.81315 3.125C9.62565 3.125 11.3652 3.95266 12.5007 5.26056C13.6361 3.95266 15.3757 3.125 17.1882 3.125C20.3965 3.125 22.9173 5.59775 22.9173 8.74489C22.9173 12.6073 19.3757 15.7544 14.0111 20.5364L12.5007 21.875Z"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                      </svg>
-                    </a>
-                    <a class="proucts__card-link" href="#">
-                      <svg
-                        class="products__card-svgА"
-                        width="30"
-                        height="30"
-                        viewBox="0 0 30 30"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M5 25H25"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                        <path
-                          d="M7.5 25L7.5 11.25H12.5V25"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                        <path
-                          d="M12.5 25L12.5 6.25H17.5V25"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                        <path
-                          d="M17.5 25V15H22.5V25"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="products__card">
-                <div class="products__card-new">новинки</div>
                 <div class="products__card-image">
                   <img
                     class="products__card-img"
@@ -1038,7 +958,7 @@
                   <a class="products__card-stock" href="#"
                     >В наличии:
                     <svg
-                    class="products__card-stock_svg"
+                      class="products__card-stock_svg"
                       width="15"
                       height="15"
                       viewBox="0 0 15 15"
@@ -1114,98 +1034,9 @@
                 </div>
               </div>
               <div class="products__card">
-                <div class="products__card-new">новинки</div>
-                <div class="products__card-image">
-                  <img
-                    class="products__card-img"
-                    src="./img/products/3.jpg"
-                    alt=""
-                  />
+                <div class="products__card-decor products__card-decor_new">
+                  новинки
                 </div>
-                <div class="products__card-box">
-                  <p class="products__card-name">Наименование</p>
-                  <p class="products__card-brand">Бренд:</p>
-                  <p class="products__card-cantry">Страна:</p>
-                  <a class="products__card-stock" href="#"
-                    >В наличии:
-                    <svg
-                    class="products__card-stock_svg"
-                      width="15"
-                      height="15"
-                      viewBox="0 0 15 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M2.5 8.125L5.625 11.25L12.5 4.375"
-                        stroke="#4798DE"
-                        stroke-linecap="square"
-                      />
-                    </svg>
-                  </a>
-                  <p class="products__card-price">15 000 ₽</p>
-                </div>
-
-                <div class="products__card-button">
-                  <button class="products__card-bag">В корзину</button>
-                  <div class="products__card-social">
-                    <a class="products__card-link" href="#">
-                      <svg
-                        class="prodicts__card-svg"
-                        width="25"
-                        height="25"
-                        viewBox="0 0 25 25"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.5007 21.875L10.9902 20.5262C5.62565 15.7544 2.08398 12.6073 2.08398 8.74489C2.08398 5.59775 4.60482 3.125 7.81315 3.125C9.62565 3.125 11.3652 3.95266 12.5007 5.26056C13.6361 3.95266 15.3757 3.125 17.1882 3.125C20.3965 3.125 22.9173 5.59775 22.9173 8.74489C22.9173 12.6073 19.3757 15.7544 14.0111 20.5364L12.5007 21.875Z"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                      </svg>
-                    </a>
-                    <a class="proucts__card-link" href="#">
-                      <svg
-                        class="products__card-svgА"
-                        width="30"
-                        height="30"
-                        viewBox="0 0 30 30"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M5 25H25"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                        <path
-                          d="M7.5 25L7.5 11.25H12.5V25"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                        <path
-                          d="M12.5 25L12.5 6.25H17.5V25"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                        <path
-                          d="M17.5 25V15H22.5V25"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="products__card">
-                <div class="products__card-new">новинки</div>
                 <div class="products__card-image">
                   <img
                     class="products__card-img"
@@ -1220,7 +1051,193 @@
                   <a class="products__card-stock" href="#"
                     >В наличии:
                     <svg
-                    class="products__card-stock_svg"
+                      class="products__card-stock_svg"
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.5 8.125L5.625 11.25L12.5 4.375"
+                        stroke="#4798DE"
+                        stroke-linecap="square"
+                      />
+                    </svg>
+                  </a>
+                  <p class="products__card-price">15 000 ₽</p>
+                </div>
+
+                <div class="products__card-button">
+                  <button class="products__card-bag">В корзину</button>
+                  <div class="products__card-social">
+                    <a class="products__card-link" href="#">
+                      <svg
+                        class="prodicts__card-svg"
+                        width="25"
+                        height="25"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.5007 21.875L10.9902 20.5262C5.62565 15.7544 2.08398 12.6073 2.08398 8.74489C2.08398 5.59775 4.60482 3.125 7.81315 3.125C9.62565 3.125 11.3652 3.95266 12.5007 5.26056C13.6361 3.95266 15.3757 3.125 17.1882 3.125C20.3965 3.125 22.9173 5.59775 22.9173 8.74489C22.9173 12.6073 19.3757 15.7544 14.0111 20.5364L12.5007 21.875Z"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                      </svg>
+                    </a>
+                    <a class="proucts__card-link" href="#">
+                      <svg
+                        class="products__card-svgА"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5 25H25"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                        <path
+                          d="M7.5 25L7.5 11.25H12.5V25"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                        <path
+                          d="M12.5 25L12.5 6.25H17.5V25"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                        <path
+                          d="M17.5 25V15H22.5V25"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="products__card">
+                <div class="products__card-decor products__card-decor_new">
+                  новинки
+                </div>
+                <div class="products__card-image">
+                  <img
+                    class="products__card-img"
+                    src="./img/products/1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="products__card-box">
+                  <p class="products__card-name">Наименование</p>
+                  <p class="products__card-brand">Бренд:</p>
+                  <p class="products__card-cantry">Страна:</p>
+                  <a class="products__card-stock" href="#"
+                    >В наличии:
+                    <svg
+                      class="products__card-stock_svg"
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.5 8.125L5.625 11.25L12.5 4.375"
+                        stroke="#4798DE"
+                        stroke-linecap="square"
+                      />
+                    </svg>
+                  </a>
+                  <p class="products__card-price">15 000 ₽</p>
+                </div>
+
+                <div class="products__card-button">
+                  <button class="products__card-bag">В корзину</button>
+                  <div class="products__card-social">
+                    <a class="products__card-link" href="#">
+                      <svg
+                        class="prodicts__card-svg"
+                        width="25"
+                        height="25"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.5007 21.875L10.9902 20.5262C5.62565 15.7544 2.08398 12.6073 2.08398 8.74489C2.08398 5.59775 4.60482 3.125 7.81315 3.125C9.62565 3.125 11.3652 3.95266 12.5007 5.26056C13.6361 3.95266 15.3757 3.125 17.1882 3.125C20.3965 3.125 22.9173 5.59775 22.9173 8.74489C22.9173 12.6073 19.3757 15.7544 14.0111 20.5364L12.5007 21.875Z"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                      </svg>
+                    </a>
+                    <a class="proucts__card-link" href="#">
+                      <svg
+                        class="products__card-svgА"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5 25H25"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                        <path
+                          d="M7.5 25L7.5 11.25H12.5V25"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                        <path
+                          d="M12.5 25L12.5 6.25H17.5V25"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                        <path
+                          d="M17.5 25V15H22.5V25"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="products__card">
+                <div class="products__card-decor products__card-decor_new">
+                  новинки
+                </div>
+                <div class="products__card-image">
+                  <img
+                    class="products__card-img"
+                    src="./img/products/4.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="products__card-box">
+                  <p class="products__card-name">Наименование</p>
+                  <p class="products__card-brand">Бренд:</p>
+                  <p class="products__card-cantry">Страна:</p>
+                  <a class="products__card-stock" href="#"
+                    >В наличии:
+                    <svg
+                      class="products__card-stock_svg"
                       width="15"
                       height="15"
                       viewBox="0 0 15 15"
@@ -1298,281 +1315,9 @@
             </div>
             <div class="products__cards">
               <div class="products__card">
-                <div class="products__card-bestseller">хит продаж</div>
-                <div class="products__card-">хит продаж</div>
-                <div class="products__card-image">
-                  <img
-                    class="products__card-img"
-                    src="./img/products/1.jpg"
-                    alt=""
-                  />
+                <div class="products__card-decor products__card-decor_discount">
+                  акции
                 </div>
-                <div class="products__card-box">
-                  <p class="products__card-name">Наименование</p>
-                  <p class="products__card-brand">Бренд:</p>
-                  <p class="products__card-cantry">Страна:</p>
-                  <a class="products__card-stock" href="#"
-                    >В наличии:
-                    <svg
-                    class="products__card-stock_svg"
-                      width="15"
-                      height="15"
-                      viewBox="0 0 15 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M2.5 8.125L5.625 11.25L12.5 4.375"
-                        stroke="#4798DE"
-                        stroke-linecap="square"
-                      />
-                    </svg>
-                  </a>
-                  <p class="products__card-price">15 000 ₽</p>
-                </div>
-
-                <div class="products__card-button">
-                  <button class="products__card-bag">В корзину</button>
-                  <div class="products__card-social">
-                    <a class="products__card-link" href="#">
-                      <svg
-                        class="prodicts__card-svg"
-                        width="25"
-                        height="25"
-                        viewBox="0 0 25 25"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.5007 21.875L10.9902 20.5262C5.62565 15.7544 2.08398 12.6073 2.08398 8.74489C2.08398 5.59775 4.60482 3.125 7.81315 3.125C9.62565 3.125 11.3652 3.95266 12.5007 5.26056C13.6361 3.95266 15.3757 3.125 17.1882 3.125C20.3965 3.125 22.9173 5.59775 22.9173 8.74489C22.9173 12.6073 19.3757 15.7544 14.0111 20.5364L12.5007 21.875Z"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                      </svg>
-                    </a>
-                    <a class="proucts__card-link" href="#">
-                      <svg
-                        class="products__card-svgА"
-                        width="30"
-                        height="30"
-                        viewBox="0 0 30 30"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M5 25H25"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                        <path
-                          d="M7.5 25L7.5 11.25H12.5V25"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                        <path
-                          d="M12.5 25L12.5 6.25H17.5V25"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                        <path
-                          d="M17.5 25V15H22.5V25"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="products__card">
-                <div class="products__card-bestseller">хит продаж</div>
-                <div class="products__card-image">
-                  <img
-                    class="products__card-img"
-                    src="./img/products/2.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="products__card-box">
-                  <p class="products__card-name">Наименование</p>
-                  <p class="products__card-brand">Бренд:</p>
-                  <p class="products__card-cantry">Страна:</p>
-                  <a class="products__card-stock" href="#"
-                    >В наличии:
-                    <svg
-                    class="products__card-stock_svg"
-                      width="15"
-                      height="15"
-                      viewBox="0 0 15 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M2.5 8.125L5.625 11.25L12.5 4.375"
-                        stroke="#4798DE"
-                        stroke-linecap="square"
-                      />
-                    </svg>
-                  </a>
-                  <p class="products__card-price">15 000 ₽</p>
-                </div>
-
-                <div class="products__card-button">
-                  <button class="products__card-bag">В корзину</button>
-                  <div class="products__card-social">
-                    <a class="products__card-link" href="#">
-                      <svg
-                        class="prodicts__card-svg"
-                        width="25"
-                        height="25"
-                        viewBox="0 0 25 25"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.5007 21.875L10.9902 20.5262C5.62565 15.7544 2.08398 12.6073 2.08398 8.74489C2.08398 5.59775 4.60482 3.125 7.81315 3.125C9.62565 3.125 11.3652 3.95266 12.5007 5.26056C13.6361 3.95266 15.3757 3.125 17.1882 3.125C20.3965 3.125 22.9173 5.59775 22.9173 8.74489C22.9173 12.6073 19.3757 15.7544 14.0111 20.5364L12.5007 21.875Z"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                      </svg>
-                    </a>
-                    <a class="proucts__card-link" href="#">
-                      <svg
-                        class="products__card-svgА"
-                        width="30"
-                        height="30"
-                        viewBox="0 0 30 30"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M5 25H25"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                        <path
-                          d="M7.5 25L7.5 11.25H12.5V25"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                        <path
-                          d="M12.5 25L12.5 6.25H17.5V25"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                        <path
-                          d="M17.5 25V15H22.5V25"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="products__card">
-                <div class="products__card-bestseller">хит продаж</div>
-                <div class="products__card-image">
-                  <img
-                    class="products__card-img"
-                    src="./img/products/3.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="products__card-box">
-                  <p class="products__card-name">Наименование</p>
-                  <p class="products__card-brand">Бренд:</p>
-                  <p class="products__card-cantry">Страна:</p>
-                  <a class="products__card-stock" href="#"
-                    >В наличии:
-                    <svg
-                    class="products__card-stock_svg"
-                      width="15"
-                      height="15"
-                      viewBox="0 0 15 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M2.5 8.125L5.625 11.25L12.5 4.375"
-                        stroke="#4798DE"
-                        stroke-linecap="square"
-                      />
-                    </svg>
-                  </a>
-                  <p class="products__card-price">15 000 ₽</p>
-                </div>
-
-                <div class="products__card-button">
-                  <button class="products__card-bag">В корзину</button>
-                  <div class="products__card-social">
-                    <a class="products__card-link" href="#">
-                      <svg
-                        class="prodicts__card-svg"
-                        width="25"
-                        height="25"
-                        viewBox="0 0 25 25"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.5007 21.875L10.9902 20.5262C5.62565 15.7544 2.08398 12.6073 2.08398 8.74489C2.08398 5.59775 4.60482 3.125 7.81315 3.125C9.62565 3.125 11.3652 3.95266 12.5007 5.26056C13.6361 3.95266 15.3757 3.125 17.1882 3.125C20.3965 3.125 22.9173 5.59775 22.9173 8.74489C22.9173 12.6073 19.3757 15.7544 14.0111 20.5364L12.5007 21.875Z"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                      </svg>
-                    </a>
-                    <a class="proucts__card-link" href="#">
-                      <svg
-                        class="products__card-svgА"
-                        width="30"
-                        height="30"
-                        viewBox="0 0 30 30"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M5 25H25"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                        <path
-                          d="M7.5 25L7.5 11.25H12.5V25"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                        <path
-                          d="M12.5 25L12.5 6.25H17.5V25"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                        <path
-                          d="M17.5 25V15H22.5V25"
-                          stroke="#4798DE"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="products__card">
-                <div class="products__card-bestseller">хит продаж</div>
                 <div class="products__card-image">
                   <img
                     class="products__card-img"
@@ -1587,7 +1332,286 @@
                   <a class="products__card-stock" href="#"
                     >В наличии:
                     <svg
-                    class="products__card-stock_svg"
+                      class="products__card-stock_svg"
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.5 8.125L5.625 11.25L12.5 4.375"
+                        stroke="#4798DE"
+                        stroke-linecap="square"
+                      />
+                    </svg>
+                  </a>
+                  <p class="products__card-price">15 000 ₽</p>
+                </div>
+
+                <div class="products__card-button">
+                  <button class="products__card-bag">В корзину</button>
+                  <div class="products__card-social">
+                    <a class="products__card-link" href="#">
+                      <svg
+                        class="prodicts__card-svg"
+                        width="25"
+                        height="25"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.5007 21.875L10.9902 20.5262C5.62565 15.7544 2.08398 12.6073 2.08398 8.74489C2.08398 5.59775 4.60482 3.125 7.81315 3.125C9.62565 3.125 11.3652 3.95266 12.5007 5.26056C13.6361 3.95266 15.3757 3.125 17.1882 3.125C20.3965 3.125 22.9173 5.59775 22.9173 8.74489C22.9173 12.6073 19.3757 15.7544 14.0111 20.5364L12.5007 21.875Z"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                      </svg>
+                    </a>
+                    <a class="proucts__card-link" href="#">
+                      <svg
+                        class="products__card-svgА"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5 25H25"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                        <path
+                          d="M7.5 25L7.5 11.25H12.5V25"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                        <path
+                          d="M12.5 25L12.5 6.25H17.5V25"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                        <path
+                          d="M17.5 25V15H22.5V25"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="products__card">
+                <div class="products__card-decor products__card-decor_discount">
+                  акции
+                </div>
+                <div class="products__card-image">
+                  <img
+                    class="products__card-img"
+                    src="./img/products/2.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="products__card-box">
+                  <p class="products__card-name">Наименование</p>
+                  <p class="products__card-brand">Бренд:</p>
+                  <p class="products__card-cantry">Страна:</p>
+                  <a class="products__card-stock" href="#"
+                    >В наличии:
+                    <svg
+                      class="products__card-stock_svg"
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.5 8.125L5.625 11.25L12.5 4.375"
+                        stroke="#4798DE"
+                        stroke-linecap="square"
+                      />
+                    </svg>
+                  </a>
+                  <p class="products__card-price">15 000 ₽</p>
+                </div>
+
+                <div class="products__card-button">
+                  <button class="products__card-bag">В корзину</button>
+                  <div class="products__card-social">
+                    <a class="products__card-link" href="#">
+                      <svg
+                        class="prodicts__card-svg"
+                        width="25"
+                        height="25"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.5007 21.875L10.9902 20.5262C5.62565 15.7544 2.08398 12.6073 2.08398 8.74489C2.08398 5.59775 4.60482 3.125 7.81315 3.125C9.62565 3.125 11.3652 3.95266 12.5007 5.26056C13.6361 3.95266 15.3757 3.125 17.1882 3.125C20.3965 3.125 22.9173 5.59775 22.9173 8.74489C22.9173 12.6073 19.3757 15.7544 14.0111 20.5364L12.5007 21.875Z"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                      </svg>
+                    </a>
+                    <a class="proucts__card-link" href="#">
+                      <svg
+                        class="products__card-svgА"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5 25H25"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                        <path
+                          d="M7.5 25L7.5 11.25H12.5V25"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                        <path
+                          d="M12.5 25L12.5 6.25H17.5V25"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                        <path
+                          d="M17.5 25V15H22.5V25"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="products__card">
+                <div class="products__card-decor products__card-decor_discount">
+                  акции
+                </div>
+                <div class="products__card-image">
+                  <img
+                    class="products__card-img"
+                    src="./img/products/1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="products__card-box">
+                  <p class="products__card-name">Наименование</p>
+                  <p class="products__card-brand">Бренд:</p>
+                  <p class="products__card-cantry">Страна:</p>
+                  <a class="products__card-stock" href="#"
+                    >В наличии:
+                    <svg
+                      class="products__card-stock_svg"
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.5 8.125L5.625 11.25L12.5 4.375"
+                        stroke="#4798DE"
+                        stroke-linecap="square"
+                      />
+                    </svg>
+                  </a>
+                  <p class="products__card-price">15 000 ₽</p>
+                </div>
+
+                <div class="products__card-button">
+                  <button class="products__card-bag">В корзину</button>
+                  <div class="products__card-social">
+                    <a class="products__card-link" href="#">
+                      <svg
+                        class="prodicts__card-svg"
+                        width="25"
+                        height="25"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.5007 21.875L10.9902 20.5262C5.62565 15.7544 2.08398 12.6073 2.08398 8.74489C2.08398 5.59775 4.60482 3.125 7.81315 3.125C9.62565 3.125 11.3652 3.95266 12.5007 5.26056C13.6361 3.95266 15.3757 3.125 17.1882 3.125C20.3965 3.125 22.9173 5.59775 22.9173 8.74489C22.9173 12.6073 19.3757 15.7544 14.0111 20.5364L12.5007 21.875Z"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                      </svg>
+                    </a>
+                    <a class="proucts__card-link" href="#">
+                      <svg
+                        class="products__card-svgА"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5 25H25"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                        <path
+                          d="M7.5 25L7.5 11.25H12.5V25"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                        <path
+                          d="M12.5 25L12.5 6.25H17.5V25"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                        <path
+                          d="M17.5 25V15H22.5V25"
+                          stroke="#4798DE"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="products__card">
+                <div class="products__card-decor products__card-decor_discount">
+                  акции
+                </div>
+                <div class="products__card-image">
+                  <img
+                    class="products__card-img"
+                    src="./img/products/4.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="products__card-box">
+                  <p class="products__card-name">Наименование</p>
+                  <p class="products__card-brand">Бренд:</p>
+                  <p class="products__card-cantry">Страна:</p>
+                  <a class="products__card-stock" href="#"
+                    >В наличии:
+                    <svg
+                      class="products__card-stock_svg"
                       width="15"
                       height="15"
                       viewBox="0 0 15 15"
@@ -1666,6 +1690,147 @@
           </div>
         </div>
       </section>
+      <section class="services">
+        <div class="services__promo services-promo">
+          <div class="services-promo__container container">
+            <div class="services-promo__quantity">
+              <p class="services-promo__work">
+                <span>2k</span>
+                наименований продукции
+              </p>
+              <p class="services-promo__work">
+                <span>30</span>
+                брендов работают с нами
+              </p>
+            </div>
+            <div class="services-promo__block">
+              <h2 class="services-promo__title">
+                Мы не просто продаем товары для ванной - мы помогаем вам найти
+                лучшее решение.
+              </h2>
+              <ul class="services-promo__list">
+                <li class="services-promo__item">
+                  <svg
+                    class="services-promo__svg"
+                    width="80"
+                    height="80"
+                    viewBox="0 0 80 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.3327 56.6666H6.66602V23.3333H49.9993V56.6666H26.666"
+                      stroke="#4798DE"
+                      stroke-width="3"
+                      stroke-linecap="square"
+                    />
+                    <path
+                      d="M66.6667 56.6667H73.3333V41.852L66.6667 30H50V56.6667H53.3333"
+                      stroke="#4798DE"
+                      stroke-width="3"
+                      stroke-linecap="square"
+                    />
+                    <path
+                      d="M20.0007 63.3333C23.6826 63.3333 26.6673 60.3486 26.6673 56.6667C26.6673 52.9848 23.6826 50 20.0007 50C16.3188 50 13.334 52.9848 13.334 56.6667C13.334 60.3486 16.3188 63.3333 20.0007 63.3333Z"
+                      stroke="#4798DE"
+                      stroke-width="3"
+                      stroke-linecap="square"
+                    />
+                    <path
+                      d="M60.0006 63.3333C63.6825 63.3333 66.6673 60.3486 66.6673 56.6667C66.6673 52.9848 63.6825 50 60.0006 50C56.3188 50 53.334 52.9848 53.334 56.6667C53.334 60.3486 56.3188 63.3333 60.0006 63.3333Z"
+                      stroke="#4798DE"
+                      stroke-width="3"
+                      stroke-linecap="square"
+                    />
+                  </svg>
+                  <div class="services-promo__box">
+                    <h3 class="services-promo__subtitle">ДОСТАВКА</h3>
+                    <p class="services-promo__text">
+                      Доставим товар в удобное для вас время
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="services__content">
+            <ul class="services__list">
+              <li class="services__item">
+                <img class="services__img" src="./img/services/1.jpg" alt="" />
+                <p class="services__text">ПРОИЗВОДИТЕЛИ</p>
+              </li>
+              <li class="services__item">
+                <img class="services__img" src="./img/services/2.jpg" alt="" />
+                <p class="services__text">АКЦИИ</p>
+              </li>
+              <li class="services__item">
+                <img class="services__img" src="./img/services/3.jpg" alt="" />
+                <p class="services__text">ОПЛАТА</p>
+              </li>
+              <li class="services__item">
+                <img class="services__img" src="./img/services/4.jpg" alt="" />
+                <p class="services__text">ВАННЫ ROCA</p>
+              </li>
+              <li class="services__item">
+                <img class="services__img" src="./img/services/5.jpg" alt="" />
+                <p class="services__text">ДАРИМ ПОДАРКИ</p>
+              </li>
+              <li class="services__item">
+                <img class="services__img" src="./img/services/6.jpg" alt="" />
+                <p class="services__text">ВЫБРАТЬ ВАННУ</p>
+              </li>
+              <li class="services__item">
+                <img class="services__img" src="./img/services/6.jpg" alt="" />
+                <p class="services__text">ВЫБРАТЬ ВАННУ</p>
+              </li>
+              <li class="services__item">
+                <img class="services__img" src="./img/services/6.jpg" alt="" />
+                <p class="services__text">ВЫБРАТЬ ВАННУ</p>
+              </li>
+              <li class="services__item">
+                <img class="services__img" src="./img/services/6.jpg" alt="" />
+                <p class="services__text">ВЫБРАТЬ ВАННУ</p>
+              </li>
+            </ul>
+            <div class="services__btns">
+              <button class="services__prev">
+                <svg
+                  width="16"
+                  height="24"
+                  viewBox="0 0 16 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 22.4102L3 11.7051L14 1.59473"
+                    stroke="#4798DE"
+                    stroke-width="3"
+                  />
+                </svg>
+              </button>
+              <div class="services__pagination"></div>
+              <button class="services__next">
+                <svg
+                  width="16"
+                  height="24"
+                  viewBox="0 0 16 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 1.59473L13 12.2998L2 22.4101"
+                    stroke="#4798DE"
+                    stroke-width="3"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="test"></section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
