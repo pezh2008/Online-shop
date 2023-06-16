@@ -1,0 +1,39 @@
+.riho {
+  position: relative;
+  background-image: url(/img/riho-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+.riho__image {
+  position: absolute;
+  top: 15px;
+  right: 170px;
+}
+.riho__img {
+}
+.riho__box {
+  padding: 10px 15px;
+  margin-top: auto;
+  max-width: 225px;
+  width: 100%;
+  background: rgba(71, 152, 222, 0.8);
+  border-radius: 5px;
+  height: 75px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+.riho__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--light);
+}
+.riho__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: var(--light);
+}

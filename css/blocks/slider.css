@@ -1,0 +1,11 @@
+.slider {
+ overflow: hidden;
+}
+.slider-wrapper {
+display: flex;
+}
+
+.slider-slide {
+  flex-shrink: 0;
+}
+

@@ -1,5 +1,4 @@
 .products {
-  margin-bottom: 100px;
 }
 .products__top {
 }
@@ -81,6 +80,7 @@
 }
 
 .products__botton {
+  min-height: 500px;
 }
 
 .products__cards {

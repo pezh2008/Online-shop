@@ -1,8 +1,126 @@
 .services {
-  
 }
-.container {
+
+.services__promo {
+  display: flex;
+  align-items: center;
 }
+
+.services-promo {
+  position: relative;
+  height: 505px;
+  margin-bottom: 30px;
+  background-image: url(/img/services/services-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.services-promo::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0;
+  background: linear-gradient(
+    270.04deg,
+    rgba(255, 255, 255, 0) 0.04%,
+    rgba(255, 255, 255, 0.72) 38.06%,
+    rgba(255, 255, 255, 0.4) 99.97%
+  );
+}
+.services-promo::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.338501) 51.7%,
+    #ffffff 100%
+  );
+}
+
+.services-promo__container {
+  display: flex;
+  z-index: 2;
+}
+
+.services-promo__quantity {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  max-width: 178px;
+  width: 100%;
+  margin-right: 42px;
+}
+.services-promo__number {
+  font-size: 75px;
+  line-height: 97px;
+  color: var(--green);
+}
+.services-promo__textgrey {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--gray);
+}
+.services-promo__block {
+}
+.services-promo__title {
+  font-size: 35px;
+  line-height: 45px;
+  color: var(--dark-blue);
+  margin-bottom: 30px;
+}
+.services-promo__list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  column-gap: 30px;
+}
+.services-promo__item {
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+}
+
+.services-promo__image {
+  max-width: 80px;
+  width: 100%;
+  height: 80px;
+  margin-right: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-promo__svg {
+  width: 100%;
+}
+.services-promo__box {
+  display: flex;
+  flex-direction: column;
+  max-width: 210px;
+  width: 100%;
+  gap: 12px;
+}
+.services-promo__subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--dark-blue);
+}
+.services-promo__text {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--gray);
+}
+
 .services__content {
   overflow: hidden;
 }
@@ -10,10 +128,16 @@
   display: flex;
 }
 .services__item {
+  overflow: hidden;
   position: relative;
   flex-shrink: 0;
 }
+.services__item:hover .services__img {
+  transform: scale(1.2);
+}
+
 .services__img {
+  transition: all 1s;
 }
 .services__text {
   position: absolute;
@@ -59,4 +183,10 @@
 
 .services__pagination .swiper-pagination-bullet-active {
   background: var(--blue);
+}
+
+.test__container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
 }
